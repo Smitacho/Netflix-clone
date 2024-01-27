@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home netflix</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav_left">
+            <ul>
+                <li><a href="index.html">
+                    <img class="nav_logo" src="netflix-2-logo-png-transparent.png">
+                </a></li>
+                <li>home</li>
+                <li>TV show</li>
+                <li>New & popular</li>
+                <li>My list</li>
+            </ul>
+        </div>
+        <div class="nav_right">
+            <ul>
+            <li><i class="fa fa-search"></i></li>
+            <li><img src="https://pbs.twimg.com/media/DN1OYIFX0AAbOMe.jpg" class="nav_avatar"></li>
+            </ul>
+        </div>
+    </div>
+    <header id="banner">
+         <div class="banner_contents"><br><br><br><br><br>
+             <h1 id="banner_title"></h1> 
+            <div id="banner_buttons">
+                <button id="banner_button"><i class="fa fa-play">  Play</i></button>
+                <button id="banner_button">My list</button>
+
+            </div>
+            <p id="banner_description"></p>
+        </div>
+        <div id="banner_fadeBottom"></div>
+    </header>
+    <!--row-->
+    <div id="headrow">
+        <div class="row">
+            <h2 class="row_title"></h2>
+            <div class="row_posters"></div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener("scroll",function(){
+            var nav = document.querySelector(".nav");
+            nav.classList.toggle("active",window.scrollY>0);
+        });
+    </script>
+</body>
+</html>
